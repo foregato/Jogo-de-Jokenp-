@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  padding-top: 50px;
+}
+
+/* Card central: limita a largura, centraliza na tela (margin: 0 auto) e dá sombra de elevação */
+.painel {
+  background: white;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo base de todos os botões e animação suave ao passar o mouse */
+button {
+  font-size: 16px;
+  padding: 10px 14px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: transform 0.15s, background-color 0.15s;
+}
+
+/* Efeito de hover: escurece de leve e cresce 5% */
+button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+/* min-height evita que o painel dê um 'pulo' de tamanho quando o texto do resultado entrar */
+#resultado {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+/* Começa oculto (display: none); o JS muda para inline-block após a primeira jogada */
+.btn-reiniciar {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  display: none;
+}
+
+.btn-reiniciar:hover {
+  background-color: #ee5253;
+}

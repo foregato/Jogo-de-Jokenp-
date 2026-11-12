@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo de Jokenpô</title>
+  <!-- Estilo visual do jogo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="painel">
+    <h2>Jogo de Jokenpô</h2>
+    <p>Escolha uma opção:</p>
+
+    <!-- Botões de ação: cada clique dispara a função JS passando a escolha feita -->
+    <div>
+      <button onclick="jogar('Pedra')">Pedra</button>
+      <button onclick="jogar('Papel')">Papel</button>
+      <button onclick="jogar('Tesoura')">Tesoura</button>
+    </div>
+
+    <!-- O JS vai alterar o texto dessa div para mostrar o vencedor -->
+    <div id="resultado">Faça sua jogada!</div>
+
+    <!-- Botão de reset: chama a função no JS para recomeçar a partida -->
+    <button id="reiniciar" class="btn-reiniciar" onclick="reiniciarJogo()">Jogar Novamente</button>
+  </div>
+
+  <!-- Importa o script com a lógica do jogo (jogar e reiniciarJogo) -->
+  <script src="script.js"></script>
+</body>
+</html>
